@@ -48,8 +48,15 @@ table {
 }
 
 body {
-    background-image: url('Assets/alteredart.png');
+    background-image: url('Assets/preview.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
+}
+
+
+.title {
+	color: aliceblue;
+	font-size: 3rem;
+	padding: 6% 0 0 6%;
 }
