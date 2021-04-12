@@ -1,0 +1,73 @@
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: rebeccapurple;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 80px;
+  max-height: 500px;
+  margin: 0;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: rotate(-90deg) translateY(-80px);
+          transform: rotate(-90deg) translateY(-80px);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper > div {
+  display: block;
+  padding: 5px;
+  background: #cab;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.squares {
+  padding: 60px 0 0 0;
+}
+
+.squares > div {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.rectangles {
+  top: 100px;
+  padding: 100px 0 0 0;
+}
+
+.rectangles > div {
+  width: 140px;
+  height: 60px;
+  margin: 50px 10px;
+  padding: 5px;
+  background: #cab;
+  -webkit-transform: rotate(90deg) translateY(80px);
+          transform: rotate(90deg) translateY(80px);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+/*# sourceMappingURL=index.css.map */
