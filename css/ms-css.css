@@ -1,4 +1,4 @@
-/* h1{font-size: 6rem;} */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -14,6 +14,7 @@
     *BACKGROUND-IMAGE
     *BACKGROUND-TWO-IMAGES-REPEAT
     *BACKGROUND-HERO-IMAGE
+    *OBJECT-FIT
     *BACKGROUND-ATTACHMENT
     *BACKGROUND-BLEND
   ##FONTS
@@ -90,11 +91,6 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS END
 ----------------------------------------------------------------
-
-
-
-
-
 /*--------------------------------------------------------------
 # GLOBAL
 --------------------------------------------------------------*/
@@ -218,6 +214,30 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  /* OBJECT-FIT */
+  /* If we use object-fit: contain; the image keeps its aspect ratio, 
+  but is resized to fit within the given dimension: */
+  .object-fit-contain {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  /* If we use object-fit: fill; the image is resized to fill the given dimension. 
+  If necessary, the image will be stretched or squished to fit: */
+  .object-fit-fill {
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+  }
+
+  /* If we use object-fit: none; the image is not resized: */
+  .object-fit-none {
+    width: 200px;
+    height: 300px;
+    object-fit: none;
   }
 
   /* BACKGROUND-ATTACHMENT (PARALLAX) */
@@ -1005,28 +1025,3 @@
 /*--------------------------------------------------------------
 # LAYOUT END
 --------------------------------------------------------------*/
-
-
-If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension:
-
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-}
-If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit:
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: fill;
-}
-If we use object-fit: none; the image is not resized:
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: none;
-}
-
