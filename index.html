@@ -17,16 +17,13 @@
 
 
 
-
 <body class="">
-
-
 	<div class="grid-1 vh-100">
 
 		<section id="header" class="header">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Altered Art</a>
+					<a class="navbar-brand td-none c-black fs-3" href="#">Altered Art</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
 						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -51,36 +48,38 @@
 			</nav>
 		</section>
 
-		<a href="www.google.com" class="web oc bgc-black c-white d-flex jc-between fd-column">
-			<main class="web oc bgc-black c-white d-flex jc-between fd-column bgi-1">
+		<main class="appdev oc bgc-black c-white d-flex fd-column jc-center">
+			<div class="cursor"></div>
 
-				<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Website Development</h2>
-			</main>
-		</a>
-		<section class="gd bgc-white c-white d-flex jc-between fd-column">
+			<h2 class="bgc-black fs-1 ta-center p-2 jc-center">App Development</h2>
+		</main>
+
+		<section class="webdev bgc-purple c-white d-flex fd-column jc-center">
+			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Web Development</h2>
+		</section>
+
+		<section class="gd bgc-red c-white d-flex fd-column jc-center">
 			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Graphic Design</h2>
 		</section>
 
-		<section class="blogs bgc-white c-white d-flex fd-column jc-between">
+		<section class="blogs bgc-blue c-white d-flex fd-column jc-center">
 			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Blogs</h2>
 		</section>
 
-
-		<div class="app bgc-white  c-white d-flex fd-column jc-between">
-
-			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">App Development</h2>
+		<div class="ach bgc-green c-white d-flex jc-center fd-column">
+			<h2 class="bgc-black fs-1 w-100 ta-center p-2">Achievements</h2>
 		</div>
-
-
-		<div class="ach bgc-white  c-white d-flex fd-column jc-between">
-
-			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Achievements</h2>
-		</div>
-
 
 	</div>
+	<script>
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left = e.pageX = 'px';
+			cursor.style.top = e.pageY = 'px';
+		});
 
-
+	</script>
 </body>
+
 
 </html>

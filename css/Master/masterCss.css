@@ -851,31 +851,39 @@
   /* GRID-AREA (ROW-START / COLUMN-START / ROW-END / COLUMN-END) * */
   .grid-1 {
     display: grid;
-    grid-template: 1fr 8fr 8fr / 1fr 1fr 1fr 1fr;
-    /* grid-template: 1fr 4fr 3fr 2fr / 1fr 1.2fr 1.5fr; */
+    cursor:url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.newdesignfile.com%2Fpost_search-icon-white-transparent_67210%2F&psig=AOvVaw3_UzTgtnnKZuDowpU0IaCC&ust=1620449227243000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj44_jhtvACFQAAAAAdAAAAABAO');
 
+    grid-template: 1fr 8fr 4fr 4fr / 1fr 1fr;
+    margin:0;
     gap: 2px;
     grid-template-areas:
-      "header header header header"
-      "app app web web"
-      "ach gd gd blogs";
+      "header header"
+      "webdev appdev"
+      "gd ach"
+      "gd blogs";
   }
 
-    /* .gt-order div:nth-child(1) {grid-area: X;} */
+  
     .header {grid-area: header;}
-    .web {grid-area: web;} /* 1 / 1 / 3 / 3*/
-    /* header {grid-area: header;} 1 / 3 / 2 / 4 */
-    /* .footer {grid-area: footer;} */
     .gd {grid-area: gd;}
     .blogs {grid-area: blogs;}
-    .app {grid-area: app;}
+    .ach {grid-area: ach;}
+    .webdev {grid-area: webdev;}
+    .appdev {grid-area: appdev;}
 
+
+    .cursor{
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      /* border: 3px solid white;  */
+      background: white;
+      transition: 0.1%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
   
-
-    
-     
-
-
 
   /*--------------------------------------------------------------
   # GRID END
