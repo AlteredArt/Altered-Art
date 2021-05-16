@@ -17,27 +17,28 @@
 
 
 
-<body class="">
+<body class="bgc-black ">
+
 	<div class="grid-1 vh-100">
 
-		<section id="header" class="header">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand td-none c-black fs-3" href="#">Altered Art</a>
+		<section id="header" class="header ">
+			<nav class="navbar navbar-expand-lg navbar-dark bcg-black">
+				<div class="container-fluid ">
+					<a class="navbar-brand td-none c-whitesmoke fs-3" href="#">Altered Art</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
 						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon c-white"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarText">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active c-white" aria-current="page" href="#">Home</a>
 							</li>
 							<li class="nav-item ">
-								<a class="nav-link" href="#">Development</a>
+								<a class="nav-link c-whitesmoke" href="#">Development</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Graphic Design</a>
+								<a class="nav-link c-whitesmoke" href="#">Graphic Design</a>
 							</li>
 						</ul>
 						<span class="navbar-text">
@@ -47,38 +48,20 @@
 				</div>
 			</nav>
 		</section>
+		<img src="/Assets/earth.jpg" alt="" class="of-fit min-vh-100 max-vw-100">
+		<main>
+			<div class="wrapper">
+				<div class="circle">We</div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
 
-		<main class="appdev oc bgc-black c-white d-flex fd-column jc-center">
-			<div class="cursor"></div>
-
-			<h2 class="bgc-black fs-1 ta-center p-2 jc-center">App Development</h2>
+			</div>
 		</main>
 
-		<section class="webdev bgc-purple c-white d-flex fd-column jc-center">
-			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Web Development</h2>
-		</section>
 
-		<section class="gd bgc-red c-white d-flex fd-column jc-center">
-			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Graphic Design</h2>
-		</section>
-
-		<section class="blogs bgc-blue c-white d-flex fd-column jc-center">
-			<h2 class="bgc-black fs-1 w-100 mb-0 ta-center p-2">Blogs</h2>
-		</section>
-
-		<div class="ach bgc-green c-white d-flex jc-center fd-column">
-			<h2 class="bgc-black fs-1 w-100 ta-center p-2">Achievements</h2>
-		</div>
 
 	</div>
-	<script>
-		const cursor = document.querySelector('.cursor');
-		document.addEventListener('mousemove', (e) => {
-			cursor.style.left = e.pageX = 'px';
-			cursor.style.top = e.pageY = 'px';
-		});
-
-	</script>
 </body>
 
 
