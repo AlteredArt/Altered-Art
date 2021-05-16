@@ -1,5 +1,8 @@
+/* .header {opacity: 0;} */
+
+.header:hover {opacity: 1;}
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS: MASTER
 ----------------------------------------------------------------
 #GLOBAL
   ##COLORS
@@ -213,13 +216,13 @@
   --------------------------------------------------------------*/
 
   /* BACKGROUND-IMAGE */
-  .bgi1 {background-image: url("/Assets/ad.webp") !important; background-color: #cccccc !important;}
-  .bgi2 {background-image: url("/Assets/gd.jpeg") !important; background-color: #cccccc !important;}
-  .bgi3 {background-image: url("/Assets/blog.jpg") !important; background-color: #cccccc !important;}
-  .bgi4 {background-image: url("/Assets/wd.webp") !important; background-color: #cccccc !important;}
+  .bgi-1 {background-image: url("/Assets/ad.webp") !important; background-color: #cccccc !important;}
+  .bgi-2 {background-image: url("/Assets/gd.jpeg") !important; background-color: #cccccc !important;}
+  .bgi-3 {background-image: url("/Assets/blog.jpg") !important; background-color: #cccccc !important;}
+  .bgi-4 {background-image: url("/Assets/earth.jpg") !important; background-color: #cccccc !important;}
 
   /* BACKGROUND-TWO-IMAGES */
-  .bgi-2 {background-image: url("img_tree.gif"), url("paper.gif") !important; background-color: #cccccc !important;}
+  .bgi-22{background-image: url("img_tree.gif"), url("paper.gif") !important; background-color: #cccccc !important;}
   /* BACKGROUND-TWO-IMAGES-REPEAT */
   .bgi-2-repeat {background-image: url("img_tree.gif"), url("paper.gif") !important; background-repeat: no-repeat, repeat !important; background-color: #cccccc !important;}
   /* BACKGROUND-HERO */
@@ -329,7 +332,7 @@
   /* LINKS */
   a {color: #4e4e25 !important; text-decoration: underline !important;}
   a:hover {color: #024dbc !important;} /* hover link*/
-  a:link {color: red !important;}   /* unvisited link */
+  /* a:link {color: red !important;}   unvisited link */
   a:visited {color: green !important;}   /* visited link */
   a:hover {color: hotpink !important;}   /* mouse over link */
   a:active {color: blue !important;}   /* selected link */
