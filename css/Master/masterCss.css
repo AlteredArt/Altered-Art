@@ -330,7 +330,7 @@
   /* P: 1REM / 16PX */ p {margin-top: 0 !important; margin-bottom: 1rem !important;}
 
   /* LINKS */
-  a {color: #4e4e25 !important; text-decoration: underline !important;}
+  a {color: white !important; text-decoration: underline !important;}
   a:hover {color: #024dbc !important;} /* hover link*/
   /* a:link {color: red !important;}   unvisited link */
   a:visited {color: green !important;}   /* visited link */
@@ -854,25 +854,26 @@
   /* GRID-AREA (ROW-START / COLUMN-START / ROW-END / COLUMN-END) * */
   .grid-1 {
     display: grid;
-    cursor:url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.newdesignfile.com%2Fpost_search-icon-white-transparent_67210%2F&psig=AOvVaw3_UzTgtnnKZuDowpU0IaCC&ust=1620449227243000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj44_jhtvACFQAAAAAdAAAAABAO');
+    /* cursor:url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.newdesignfile.com%2Fpost_search-icon-white-transparent_67210%2F&psig=AOvVaw3_UzTgtnnKZuDowpU0IaCC&ust=1620449227243000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj44_jhtvACFQAAAAAdAAAAABAO'); */
 
-    grid-template: 1fr 8fr 4fr 4fr / 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
     margin:0;
-    gap: 2px;
+    gap: 20px;
     grid-template-areas:
-      "header header"
-      "webdev appdev"
-      "gd ach"
-      "gd blogs";
+      "apps apps sites sites"
+      "achievements contact contact blogs"
+      "graphic graphic graphic graphic";
   }
 
   
-    .header {grid-area: header;}
-    .gd {grid-area: gd;}
+    /* .header {grid-area: header;} */
+    .graphic {grid-area: graphic;}
     .blogs {grid-area: blogs;}
-    .ach {grid-area: ach;}
-    .webdev {grid-area: webdev;}
-    .appdev {grid-area: appdev;}
+    .achievements {grid-area: achievements;}
+    .contact{grid-area: contact;}
+    .apps {grid-area: apps;}
+    .sites {grid-area: sites;}
 
 
     .cursor{
