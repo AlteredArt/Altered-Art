@@ -216,10 +216,13 @@
   --------------------------------------------------------------*/
 
   /* BACKGROUND-IMAGE */
-  .bgi-1 {background-image: url("/Assets/ad.webp") !important; background-color: #cccccc !important;}
+  .bgi-1 {background-image: url("/Assets/ad.jpg") !important; background-color: #cccccc !important;}
   .bgi-2 {background-image: url("/Assets/gd.jpeg") !important; background-color: #cccccc !important;}
   .bgi-3 {background-image: url("/Assets/blog.jpg") !important; background-color: #cccccc !important;}
-  .bgi-4 {background-image: url("/Assets/earth.jpg") !important; background-color: #cccccc !important;}
+  .bgi-4 {background-image: url("/Assets/graphic.jpg") !important; background-color: #cccccc !important;}
+  .bgi-5 {background-image: url("/Assets/earth.jpg") !important; background-color: #cccccc !important;}
+  .bgi-6 {background-image: url("/Assets/earth.jpg") !important; background-color: #cccccc !important;}
+
 
   /* BACKGROUND-TWO-IMAGES */
   .bgi-22{background-image: url("img_tree.gif"), url("paper.gif") !important; background-color: #cccccc !important;}
@@ -856,10 +859,10 @@
     display: grid;
     /* cursor:url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.newdesignfile.com%2Fpost_search-icon-white-transparent_67210%2F&psig=AOvVaw3_UzTgtnnKZuDowpU0IaCC&ust=1620449227243000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj44_jhtvACFQAAAAAdAAAAABAO'); */
 
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin:0;
-    gap: 20px;
+    gap: 5px;
     grid-template-areas:
       "apps apps sites sites"
       "achievements contact contact blogs"
